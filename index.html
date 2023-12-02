@@ -8,6 +8,7 @@
     <title>Motivo Cultural - 9º B - Mundo Distópico</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Bootstrap + Dorang main styles -->
 	<link rel="stylesheet" href="assets/css/dorang.css">
@@ -70,8 +71,8 @@
     </div><!-- end of modal -->
 
     <!-- page container -->
-    <div id="distopia" class="container page-container" style="transition: .4s;">
-        <div class="col-md-10 col-lg-8 m-auto">
+    <div id="distopia" class="container page-container mt-0 pt-0" style="transition: .4s;">
+        <div class="col-md-12 col-lg-10 m-auto">
             <h6 class="title mb-4">Você sabe o que é um mundo Distópico?</h6>
             <p class="mb-5">Um futuro distópico é uma representação de um futuro indesejável, expressado muitas vezes por condições sociais, políticas e ambientais negativas.
                 É um universo imaginário que apresenta uma realidade opressora e aterrorizante. É o oposto de uma utopia. 
@@ -106,20 +107,31 @@
             </div>
         </div><!-- end of row -->
 
-        <!-- Organização da sala -->
-        <div id="sala" class="col-md-12 col-lg-10 m-auto">
-            <h6 class="title mb-4 mt-2 pt-2">Organização da Sala</h6>
-            <p class="mb-5">A nossa sala abordará o tema Futuro Distópico, destacando 
-                principais vertentes como fauna, flora, água e oxigênio.
-                Da esquerda para a direita, a primeira parede traz filmes com cenário 
-                distópico, divididos entre fauna, flora e oxigênio. A segunda parede é ilustrada 
-                por robôs e indústrias. O próximo espaço traz um jogo desenvolvido exclusivamente 
-                para o 9ºB que põe os espectadores em realidade virtual em meio a um roteiro 
-                planejado. No quadro, temos a linha do tempo do futuro, que mostra exatamente os 
-                próximos passos da humanidade. Por fim, no meio, temos uma lago de peixes e cartas do 
-                futuro, que trazem relatos sobre a possível realidade.
-            </p>
-        </div>
+        <!-- row --> <!-- Organização da sala -->
+        <div class="row mb-4">
+            <div class="col-lg-6">
+                <a href="javascript:void(0)" class="card">
+                    <img src="assets/imgs/sala.jpg" class="card-img" alt="Sala de aula"> 
+                </a>
+            </div>  
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body mt-0 pt-0">
+                        <h1 class="card-title mb-3">Organização da Sala</h1>
+                        <p class="card-text text-justify">A nossa sala abordará o tema Futuro Distópico, destacando 
+                            principais vertentes como fauna, flora, água e oxigênio.
+                            Da esquerda para a direita, a primeira parede traz filmes com cenário 
+                            distópico, divididos entre fauna, flora e oxigênio. A segunda parede é ilustrada 
+                            por robôs e indústrias. O próximo espaço traz um jogo desenvolvido exclusivamente 
+                            para o 9ºB que põe os espectadores em realidade virtual em meio a um roteiro 
+                            planejado. No quadro, temos a linha do tempo do futuro, que mostra exatamente os 
+                            próximos passos da humanidade. Por fim, no meio, temos uma lago de peixes e cartas do 
+                            futuro, que trazem relatos sobre a possível realidade.
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div><!-- end of row -->
 
         <!-- Dystopia -->
         <div id="jogo" class="col-md-10 col-lg-8 m-auto">
@@ -128,9 +140,62 @@
                  em uma distopia violenta. O personagem principal mostra e fala um pouco sobre o 
                  futuro e os acontecimentos que levaram a esse futuro distópico.
             </p>
-        </div>  
-        <iframe width="679" height="382" src="https://www.youtube.com/embed/Ha5JOLFaxHo" title="Dystopia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="row mb-4">
+            <div class="col-lg-10 m-auto">
+                <iframe width="100%" height="382" src="https://www.youtube.com/embed/Ha5JOLFaxHo" title="Dystopia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>            
+        </div>
+        <!-- fim dystopi -->
 
+        <!-- Carrosel -->
+        <div class="row mp-4">
+            <div class="col-lg-10 m-auto">
+                <h3 class="m-4">Galeria de imagens</h3>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/imgs/sala1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/imgs/sala2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/imgs/sala3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/imgs/sala4.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/imgs/sala5.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/imgs/sala6.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/imgs/sala7.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
         
     </div> <!-- end of page container -->
 
@@ -167,6 +232,7 @@
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- bootstrap affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
